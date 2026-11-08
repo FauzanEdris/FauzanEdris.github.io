@@ -12,6 +12,7 @@ import { projects } from '~/data/projects'
       <h3>{{ project.title }}</h3>
       <p>{{ project.description }}</p>
       <div class="tags">{{ project.technologies.join(' / ') }}</div>
+      <p v-if="project.slug"><NuxtLink class="text-link" :to="`/projects/${project.slug}/`">Explore the project ↗</NuxtLink></p>
       <p v-if="project.links?.length">
         <template v-for="(link, linkIndex) in project.links" :key="link.url">
           <span v-if="linkIndex"> · </span><a class="text-link" :href="link.url">{{ link.label }} ↗</a>
