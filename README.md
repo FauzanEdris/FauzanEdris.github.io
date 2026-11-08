@@ -20,4 +20,4 @@ The generated website is in `.output/public/`. Review it locally before publishi
 - [Decision log](docs/DECISIONS.md): important technical and editorial decisions.
 - [Work status](docs/STATUS.md): current progress, checks and next steps. Update this when meaningful work is completed.
 
-The initial page and styles are in `app/pages/` and `app/assets/css/`. Project data still needs to be separated from the page. Never commit credentials, private career notes, or private employer code.
+Update project descriptions in `app/data/projects.js`. The list component is in `app/components/`, the page in `app/pages/`, and styles in `app/assets/css/`. Never commit credentials, private career notes, or private employer code.
