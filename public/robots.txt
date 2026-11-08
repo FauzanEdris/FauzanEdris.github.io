@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fauzanedris.my.id/sitemap.xml
