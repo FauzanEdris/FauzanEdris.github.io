@@ -2,6 +2,8 @@
 
 Updated: 2026-11-08
 
+- Production update: commit `134251b` is deployed through Cloudflare Pages, whose custom domain is `fauzanedris.my.id`. Cloudflare uses Node 26.13.0, pnpm 12.4.0, `pnpm generate`, and `dist`. GitHub Pages also deployed the commit but is not serving the custom domain. On-domain checks confirmed the homepage and five detail pages return 200, robots.txt returns plain text, sitemap.xml returns XML, images and favicon are available, and an unknown URL returns 404. Search indexing, social preview appearance, and a complete accessibility review remain unverified.
+
 - Current development branch: `dev/main`. The existing static HTML remains the current live-site source.
 - Project descriptions live in `app/data/projects.js`. Jeg Kit, Profecient, Magnitude, JNews, and Gutenverse have separate detail pages, product links, and landing-page screenshots captured in November 2026. Some Gutenverse contributions are explicitly marked as having unconfirmed release status. The thesis project has no confirmed public URL or screenshot.
 - Node 26.13.0 and pnpm 12.4.0 were used successfully. A frozen install and `pnpm generate` passed on the existing local installation. The three project detail routes were generated with titles, canonical URLs, and contribution text. At 375px width the four pages loaded without horizontal document overflow and displayed the expected headings and canonical URLs; one initial Tab focus was checked. This is not a full accessibility or visual audit. A clean install and the GitHub deployment workflow have not been tested.

@@ -6,7 +6,7 @@ A professional portfolio for Fauzan Edris, a software developer based in Bali, I
 
 ## Goals and constraints
 
-- Maintainable Nuxt application, statically generated and deployable to GitHub Pages at https://fauzanedris.my.id/.
+- Maintainable Nuxt application, statically generated and published via Cloudflare Pages at https://fauzanedris.my.id/; source is hosted on GitHub.
 - Responsive, accessible and fast, with substantive and accurate content. Maintain the existing public site until the new version is ready and explicitly authorized for release.
 - Render meaningful HTML at build time, use useful titles, descriptions, canonical URLs, robots.txt, sitemap and structured data consistent with visible content. SEO and discovery by AI systems cannot be guaranteed; no special AI file guarantees visibility.
 - GitHub Pages is static: do not require server-side routes, secrets, or an always-running backend.
@@ -20,4 +20,4 @@ Experience includes PHP, JavaScript, React, jQuery, WordPress, Elementor and Gut
 
 ## Deployment
 
-Develop on `dev/main`; `main` is the live branch. Preserve the custom domain. The Actions workflow must only deploy `main` automatically, not a development push. Review the GitHub Pages configuration before switching deployment source. Changes to source do not imply permission to publish.
+Develop on `dev/main`; Cloudflare Pages builds `main` for the custom domain. Its build command is `pnpm generate` and its output is `dist` under the Cloudflare preset; see the README for the selected tool versions. GitHub Pages is also configured with an Actions workflow, but is not the origin of the custom domain. Preserve the domain and do not publish changes without authorization.

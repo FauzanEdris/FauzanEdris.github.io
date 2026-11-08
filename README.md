@@ -1,6 +1,6 @@
 # Fauzan Edris — Portfolio
 
-Personal portfolio for Fauzan Edris, built with Nuxt and generated as a static site for GitHub Pages. The current published site remains in `index.html` while the Nuxt version is developed on `dev/main`.
+Personal portfolio for Fauzan Edris, built with Nuxt and generated as a static site. The public custom domain is served by Cloudflare Pages from the `main` branch; development takes place on `dev/main`.
 
 ## Getting started
 
@@ -12,7 +12,7 @@ pnpm dev
 pnpm generate
 ```
 
-The generated website is in `.output/public/`. Review it locally before publishing. GitHub Pages must be configured to deploy using GitHub Actions before the workflow can publish; it only deploys from `main` or when manually requested.
+Local static output is in `.output/public/`. On Cloudflare Pages, Nuxt selects the `cloudflare-pages-static` preset and outputs to `dist`. The Cloudflare project uses the `main` branch, build command `pnpm generate`, output directory `dist`, an empty root directory, `NODE_VERSION=26.13.0` and `PNPM_VERSION=12.4.0`. Review changes before publishing. The repository also has a GitHub Pages workflow, but the custom domain currently points to Cloudflare Pages.
 
 ## Project documentation
 
