@@ -33,7 +33,7 @@ useHead({ link: [{ rel: 'canonical', href: canonical }] })
       <p class="detail-lead">{{ project.overview }}</p>
       <div class="detail-grid">
         <div><div class="section-label">Role</div><p>{{ project.role }}</p><div class="section-label">Technologies</div><p>{{ project.technologies.join(' / ') }}</p></div>
-        <section aria-labelledby="contributions"><h2 id="contributions">My contributions</h2><ul><li v-for="item in project.contributions" :key="item">{{ item }}</li></ul><p class="detail-note">This was a team product. These examples describe my contributions.</p><p v-if="project.links?.length"><template v-for="link in project.links" :key="link.url"><a class="text-link detail-external" :href="link.url">{{ link.label }} ↗</a></template></p></section>
+        <section aria-labelledby="contributions"><h2 id="contributions">My contributions</h2><ul><li v-for="item in project.contributions" :key="item">{{ item }}</li></ul><p class="detail-note">This was a team product. These examples describe my contributions.</p><p v-if="project.note" class="detail-note">{{ project.note }}</p><p v-if="project.links?.length"><template v-for="link in project.links" :key="link.url"><a class="text-link detail-external" :href="link.url">{{ link.label }} ↗</a></template></p></section>
       </div>
       <NuxtLink class="text-link" to="/#work">← Back to selected work</NuxtLink>
     </main>
