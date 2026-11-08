@@ -31,6 +31,10 @@ useHead({ link: [{ rel: 'canonical', href: canonical }] })
       <div class="eyebrow">{{ project.category }} · JEGSTUDIO</div>
       <h1>{{ project.title }}</h1>
       <p class="detail-lead">{{ project.overview }}</p>
+      <figure class="project-screenshot">
+        <img :src="`/images/projects/${project.slug}.jpg`" :alt="`Screenshot of the ${project.title} website landing page`" :width="project.slug === 'jeg-kit' ? 1534 : 780" :height="project.slug === 'jeg-kit' ? 958 : 625" loading="lazy" decoding="async">
+        <figcaption>Product website landing page, captured November 2026.</figcaption>
+      </figure>
       <div class="detail-grid">
         <div><div class="section-label">Role</div><p>{{ project.role }}</p><div class="section-label">Technologies</div><p>{{ project.technologies.join(' / ') }}</p></div>
         <section aria-labelledby="contributions"><h2 id="contributions">My contributions</h2><ul><li v-for="item in project.contributions" :key="item">{{ item }}</li></ul><p class="detail-note">This was a team product. These examples describe my contributions.</p><p v-if="project.note" class="detail-note">{{ project.note }}</p><p v-if="project.links?.length"><template v-for="link in project.links" :key="link.url"><a class="text-link detail-external" :href="link.url">{{ link.label }} ↗</a></template></p></section>
