@@ -1,6 +1,6 @@
 <script setup>
 const siteUrl = "https://fauzanedris.my.id/"
-useSeoMeta({ title: "Fauzan Edris — Software & WordPress Developer", description: "Fauzan Edris is a software and WordPress developer based in Bali, Indonesia.", ogTitle: "Fauzan Edris — Software & WordPress Developer", ogDescription: "Explore Fauzan Edris’s software and WordPress development work.", ogType: "website", ogUrl: siteUrl, twitterCard: "summary" })
+useSeoMeta({ title: "Fauzan Edris — Software & WordPress Developer", description: "Fauzan Edris is a software and WordPress developer based in Bali, Indonesia.", ogTitle: "Fauzan Edris — Software & WordPress Developer", ogDescription: "Explore Fauzan Edris’s software and WordPress development work.", ogType: "website", ogUrl: siteUrl, ogSiteName: "Fauzan Edris", ogImage: `${siteUrl}images/social-preview.png`, ogImageAlt: "Fauzan Edris — software and WordPress developer based in Bali", ogImageWidth: 1200, ogImageHeight: 630, ogImageType: "image/png", twitterCard: "summary_large_image", twitterImage: `${siteUrl}images/social-preview.png`, twitterImageAlt: "Fauzan Edris — software and WordPress developer based in Bali" })
 useHead({ link: [{ rel: "canonical", href: siteUrl }], script: [{ type: "application/ld+json", innerHTML: JSON.stringify({ "@context": "https://schema.org", "@type": "Person", name: "Fauzan Edris", url: siteUrl, jobTitle: "Software & WordPress Developer", sameAs: ["https://www.linkedin.com/in/fauzanedris/", "https://github.com/FauzanEdris"] }) }] })
 </script>
 

@@ -13,7 +13,15 @@ useSeoMeta({
   ogDescription: project.description,
   ogType: 'website',
   ogUrl: canonical,
-  twitterCard: 'summary',
+  ogSiteName: 'Fauzan Edris',
+  ogImage: 'https://fauzanedris.my.id/images/social-preview.png',
+  ogImageAlt: 'Fauzan Edris — software and WordPress developer based in Bali',
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
+  ogImageType: 'image/png',
+  twitterCard: 'summary_large_image',
+  twitterImage: 'https://fauzanedris.my.id/images/social-preview.png',
+  twitterImageAlt: 'Fauzan Edris — software and WordPress developer based in Bali',
 })
 useHead({ link: [{ rel: 'canonical', href: canonical }] })
 </script>
