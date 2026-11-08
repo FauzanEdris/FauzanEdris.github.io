@@ -32,7 +32,7 @@ useHead({ link: [{ rel: 'canonical', href: canonical }] })
       <h1>{{ project.title }}</h1>
       <p class="detail-lead">{{ project.overview }}</p>
       <figure class="project-screenshot">
-        <img :src="`/images/projects/${project.slug}.jpg`" :alt="`Screenshot of the ${project.title} website landing page`" :width="project.slug === 'jeg-kit' ? 1534 : 780" :height="project.slug === 'jeg-kit' ? 958 : 625" loading="lazy" decoding="async">
+        <img :src="`/images/projects/${project.slug}.webp`" :alt="`Screenshot of the ${project.title} website landing page`" width="1440" height="900" loading="lazy" decoding="async">
         <figcaption>Product website landing page, captured November 2026.</figcaption>
       </figure>
       <div class="detail-grid">
