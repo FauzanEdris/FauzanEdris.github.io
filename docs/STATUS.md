@@ -2,6 +2,9 @@
 
 Updated: 2026-11-08
 
+- 2026-11-10: Search Console still reports that sitemap processing failed on 8 November. Google's live URL test for `/sitemap.xml` says the URL is available to Google; this does not confirm successful sitemap parsing. The homepage is indexed, while JNews was not yet indexed when inspected. Indexing requests for all five project pages were submitted on 10 November.
+- Local development: `pnpm generate` now regenerates `public/sitemap.xml` from the homepage and project data. Local builds with both the default static and explicit `cloudflare-pages-static` presets passed, as did six-route sitemap/output comparisons. This change is not yet published. Cloudflare 404 cache policy and the LinkedIn profile link require authenticated account access.
+
 - Production update: commit `134251b` is deployed through Cloudflare Pages, whose custom domain is `fauzanedris.my.id`. Cloudflare uses Node 26.13.0, pnpm 12.4.0, `pnpm generate`, and `dist`. GitHub Pages also deployed the commit but is not serving the custom domain. On-domain checks confirmed the homepage and five detail pages return 200, robots.txt returns plain text, sitemap.xml returns XML, images and favicon are available, and an unknown URL returns 404. Search indexing, social preview appearance, and a complete accessibility review remain unverified.
 
 - Current development branch: `dev/main`. The existing static HTML remains the current live-site source.
